@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Shop.Models.Order>
+
+@{
+    ViewBag.Title = "Wszystkie zamówienia";
+}
+    <h2>Wszystkie zamówienia</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SendOrder)
+            </th>
+            <th>
+                Opcje
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SendOrder)
+                </td>
+                <td>
+                    @Html.ActionLink("Szczegóły ", "UserDetails", new { id = item.Id }) 
+                    @Html.ActionLink("Edytuj", "Edit", new { id = item.Id }) 
+
+
+                </td>
+            </tr>
+        }
+
+    </table>

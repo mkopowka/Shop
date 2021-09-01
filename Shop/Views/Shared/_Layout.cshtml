@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sklep internetowy </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.Action("Index", "")" class="navbar-brand">
+                    <img src="~/Resources/logo.png" title="title" alt="additional title" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Produkty", "Index", "Products")</li>
+                    <li>@Html.ActionLink("Kategorie", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Producenci", "Index", "Producers")</li>
+                    <li>@Html.ActionLink("Koszyk", "Index", "Carts")</li>
+                    @if (Context.User.IsInRole("Admin"))
+                    {
+                        <li>@Html.ActionLink("Zamówienia", "Index", "Orders")</li>
+                        <li>@Html.ActionLink("Magazyny", "Index", "Warehouses")</li>
+                        <li>@Html.ActionLink("Transporty", "Index", "Transports")</li>
+                    }
+
+                   
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @Html.ActionLink("Kontakt", "Contact", "Home")
+            <p>&copy; @DateTime.Now.Year - Mateusz Kopówka ©</p>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

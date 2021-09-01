@@ -1,0 +1,46 @@
+﻿@model Shop.Models.QuantityWarehouse
+
+@{
+    ViewBag.Title = "Usuń ilość z  magazynu";
+}
+
+<h2>Czy na pewno chcesz usunąć produkt z tego magazynu?</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Warehouse.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Warehouse.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
+            @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+        </div>
+    }
+</div>

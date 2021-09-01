@@ -1,0 +1,141 @@
+﻿@model Shop.Models.Order
+@using Shop.Models
+@{
+    ViewBag.Title = "Szczegóły zamówienia";
+}
+
+<h2>Szczegóły zamówienia</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.SecondName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.SecondName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.HouseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.HouseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.Street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.Voivodeship)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Voivodeship)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SendOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SendOrder)
+        </dd>
+    </dl>
+    <table border="1">
+        <tr>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th>Ilość</th>
+            <th>Całość</th>
+        </tr>
+
+        @foreach (Cart cart in (List<Cart>)ViewBag.Basket)
+        {
+            <tr>
+                <td>@cart.Product.Name</td>
+                <td>@cart.Product.Price zł</td>
+                <td>@cart.Quantity</td>
+                <td>@(String.Format("{0:N0}", cart.Product.Price * cart.Quantity))zł</td>
+            </tr>
+        }
+        <tr>
+            <td colspan="3">Kurier:</td>
+            <td>16 zł</td>
+        </tr>
+        <tr>
+            <td colspan="3">Całkowite zamówienie:</td>
+            <td>
+                @{
+                    List<Cart> tmp = (List<Cart>)ViewBag.Basket;
+                    var kurier = 16;
+                    var total = String.Format("{0:N0}", tmp.Sum(x => x.Quantity * x.Product.Price+ kurier));
+                }
+                @total zł
+            </td>
+        </tr>
+    </table>
+
+</div>

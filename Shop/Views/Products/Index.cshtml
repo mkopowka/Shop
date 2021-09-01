@@ -1,0 +1,68 @@
+﻿@model PagedList.IPagedList<Shop.Models.Product>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Produkty";
+}
+
+<div id="row">
+    <ul id="navlist">
+
+        @using (Html.BeginForm("Index", "Products", FormMethod.Get))
+        {
+            <p>
+                Wyszukaj: @Html.TextBox("SearchString")
+                <input type="submit" value="Szukaj" class="btn btn-primary btn-large" />
+            </p>
+
+        }
+
+
+        @if (Context.User.IsInRole("Admin"))
+        {
+            @Html.ActionLink("Dodaj Produkt", "Create", null, new { @class = "btn btn-primary btn-large" })
+        }
+        Sortowanie:
+        <li>@Html.ActionLink("Nazwa Producenta", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+        <li>@Html.ActionLink("Nazwa", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+        <li>@Html.ActionLink("Cena", "Index", new { sortOrder = ViewBag.CenaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+    </ul>
+</div>
+<br>
+<br>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="col-md-5">
+                <a href='@Url.Action("Details", new { @id = item.Id })'>
+                    <img src="~/Resources/@item.Photo" alt="Zdjęcie" height="300" width="200" />
+                </a><br />
+                @Html.DisplayFor(modelItem => item.Producer.Name)
+                @Html.DisplayFor(modelItem => item.Name)<br />
+                @Html.DisplayFor(modelItem => item.Price) zł
+                <a href='@Url.Action( "OrderNow", "Carts", new { id = item.Id }, null)'>
+                    <img src='@Url.Content("~/Resources/cart.png")' />
+                </a>
+                @if (Context.User.IsInRole("Admin"))
+                {
+                    @Html.ActionLink("Edytuj      ", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                }
+
+            </div>
+        </div>
+    }
+
+</div>
+
+
+
+
+<br />
+@*Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount*@
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

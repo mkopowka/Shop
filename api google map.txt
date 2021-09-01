@@ -1,0 +1,2 @@
+AIzaSyC72mSI09dajziAxYoKYqwtXf8NZZDHDZ4
+            center: { lat: 52.1676031, lng: 22.290164499999946 },

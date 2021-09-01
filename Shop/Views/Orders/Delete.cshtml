@@ -1,0 +1,64 @@
+﻿@model Shop.Models.Order
+
+@{
+    ViewBag.Title = "Usuwanie";
+}
+
+<h3>Czy chcesz usunąć to zamowienie?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SendOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SendOrder)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> 
+            
+        </div>
+        <div>
+            @Html.ActionLink("Powrót", "Index")
+        </div>
+    }
+</div>

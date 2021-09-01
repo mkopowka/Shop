@@ -1,0 +1,76 @@
+﻿@model Shop.Models.Transport
+
+@{
+    ViewBag.Title = "Usuń Transport";
+}
+
+<h2>Czy na pewno chcesz usunąć ten transport?</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransportTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransportTime)
+        </dd>
+
+
+        <table class="table">
+            <tr>
+
+                <th>
+                    Nazwa
+                </th>
+                <th>
+                    Ilosc
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.TransportProductQuantity)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Name)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
+            @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+        </div>
+    }
+</div>

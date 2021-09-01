@@ -1,0 +1,211 @@
+﻿@model IEnumerable<Shop.Models.Warehouse>
+
+@{
+    ViewBag.Title = "Magazyny";
+}
+
+<h2>Lista Magazynów</h2>
+
+    <ul id="warelist">
+          <li >@Html.ActionLink("Dodaj Magazyn ", "Create", null, new { @class = "btn btn-primary btn-large" })</li>
+          <li>@Html.ActionLink("Stan Magazynów", "Index", "QuantityWarehouses", null, new { @class = "btn btn-primary btn-large" })</li>
+    </ul>
+<p>
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nr magazynu
+        </th>
+
+        <th>
+            Miasto
+        </th>
+
+        <th>
+            Kod Pocztowy
+        </th>
+
+        <th>
+            Ulica
+        </th>
+
+        <th>
+            Nr Budynku
+        </th>
+
+        <th>
+            Województwo
+        </th>
+
+        <th>
+            Opcje
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+
+            <td>
+                @Html.ActionLink(item.City, "Details", new { @id = item.Id })
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Street)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.BuildingNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Voivodeship)
+            </td>
+
+            <td>
+
+                @Html.ActionLink("Edytuj", "Edit", new { id = item.Id })
+                @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+@*
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <div>
+                Dokąd: <input id="travelto" type="text" name="name" value="Pozioma 7, 08-310 Białystok" />
+                <input type="button" value="Dodaj" onclick="PushDestination()" />
+            </div>
+            <div id="destinations"></div><br />
+            Skąd : <input id="travelfrom" type="text" name="name" value="Klonowa 7, 08-110 Siedce" />   <br />  <br />
+
+
+            <input type="button" value="Oblicz Trasę" onclick="GetRoute()" />
+            <p></p>
+            <br />
+            <div id="dvDistance">
+                <table id="tblResults" border="1" cellpadding="10">
+                    <tr>
+                        <th> Start </th>
+                        <th> Koniec </th>
+                        <th> Dystans </th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <p></p>
+
+            <div id="dvMap" style="min-height:500px"></div>
+
+        </div>
+    </div>
+
+    @section scripts{
+
+            <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC72mSI09dajziAxYoKYqwtXf8NZZDHDZ4" type="text/javascript"></script>
+
+            <script>
+
+
+                var source, destination;
+                var locations = [];
+                var directionsDisplay;
+                var directionsService = new google.maps.DirectionsService();
+
+                var map = new google.maps.Map(document.getElementById('dvMap'), {
+                    center: { lat: 52.1676031, lng: 22.290164499999946 },
+                    zoom: 13,
+                    mapTypeId: 'roadmap'
+                });
+
+                google.maps.event.addDomListener(window, 'load', function () {
+                    new google.maps.places.SearchBox(document.getElementById('travelfrom'));
+                    new google.maps.places.SearchBox(document.getElementById('travelto'));
+                    directionsDisplay = new google.maps.DirectionsRenderer({ 'draggable': true });
+                });
+
+                function PushDestination() {
+                    destination = document.getElementById("travelto").value;
+                    locations.push(destination);
+                    document.getElementById("travelto").value = "";
+                    destinationArray = document.getElementById("destinations");
+                    destinationArray.innerHTML += destination + "<br />";
+                }
+
+                function setDestination(dest)
+                {
+                    document.getElementById('travelto').value = dest;
+                    PushDestination();
+                }
+
+
+                function GetRoute() {
+
+                    directionsDisplay.setMap(map);
+
+                    source = document.getElementById("travelfrom").value;
+                    destination = document.getElementById("travelto").value;
+
+                    var waypoints = [];
+                    for (var i = 0; i < locations.length; i++) {
+                        var address = locations[i];
+                        if (address !== "") {
+                            waypoints.push({
+                                location: address,
+                                stopover: true
+                            });
+                        }
+                    }
+
+                    var request = {
+                        origin: source,
+                        destination: waypoints[0].location,
+                        waypoints: waypoints, //an array of waypoints
+                        optimizeWaypoints: true, //set to true if you want google to determine the shortest route or false to use the order specified.
+                        travelMode: google.maps.DirectionsTravelMode.DRIVING
+                    };
+
+                    directionsService.route(request, function (response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            var dvDistance = document.getElementById("dvDistance");
+                            var distance = 0;
+                            response.routes[0].legs.forEach(function (item, index) {
+                                if (index < response.routes[0].legs.length - 1) {
+                                    distance = distance + parseInt(item.distance.text);
+
+                                    tbl = document.getElementById("tblResults");
+                                    var row = tbl.insertRow(1);
+                                    var cell = row.insertCell(0);
+                                    cell.innerText = source;
+                                    var cell = row.insertCell(1);
+                                    cell.innerText = item.end_address;
+                                    var cell = row.insertCell(2);
+                                    cell.innerText = distance;
+                                }
+                            });
+                            directionsDisplay.setDirections(response);
+                        }
+                        else {
+
+                        }
+                    })
+                };
+
+            </script>
+        }*@

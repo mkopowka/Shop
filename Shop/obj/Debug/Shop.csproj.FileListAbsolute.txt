@@ -1,0 +1,604 @@
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\ApplicationInsights.config
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\csc.exe
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\vbc.exe
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.dll.config
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.pdb
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Owin.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Razor.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\WebGrease.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Razor.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.dll
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.pdb
+C:\Shop2\Shop\Shop\bin\ApplicationInsights.config
+C:\Shop2\Shop\Shop\bin\roslyn\csc.exe
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Shop2\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Shop2\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Shop2\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Shop2\Shop\Shop\bin\roslyn\vbc.exe
+C:\Shop2\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Shop2\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Shop2\Shop\Shop\bin\Shop.dll.config
+C:\Shop2\Shop\Shop\bin\Shop.dll
+C:\Shop2\Shop\Shop\bin\Shop.pdb
+C:\Shop2\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Shop2\Shop\Shop\bin\EntityFramework.dll
+C:\Shop2\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Shop2\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Shop2\Shop\Shop\bin\Owin.dll
+C:\Shop2\Shop\Shop\bin\PagedList.dll
+C:\Shop2\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Shop2\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Shop2\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Shop2\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Shop2\Shop\Shop\bin\System.Web.Razor.dll
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Shop2\Shop\Shop\bin\WebGrease.dll
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Shop2\Shop\Shop\bin\PagedList.xml
+C:\Shop2\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Shop2\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Shop2\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Shop2\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Shop2\Shop\Shop\bin\System.Web.Razor.xml
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Shop2\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Shop2\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Shop2\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Shop2\Shop\Shop\bin\EntityFramework.xml
+C:\Shop2\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Shop2\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Shop2\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Shop2\Shop\Shop\obj\Debug\Shop.dll
+C:\Shop2\Shop\Shop\obj\Debug\Shop.pdb
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\ApplicationInsights.config
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\csc.exe
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\vbc.exe
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Shop.dll.config
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Shop.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Shop.pdb
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\EntityFramework.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Owin.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\PagedList.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Razor.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\WebGrease.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\PagedList.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.Razor.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\EntityFramework.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\obj\Debug\Shop.dll
+C:\Users\MATEUSZ\Downloads\Shop\Shop\Shop\obj\Debug\Shop.pdb
+C:\Users\MATEUSZ\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Users\mkopo\Downloads\Shop\Shop\bin\ApplicationInsights.config
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\csc.exe
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\vbc.exe
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Users\mkopo\Downloads\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Shop.dll.config
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Shop.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Shop.pdb
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\EntityFramework.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Owin.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\PagedList.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Razor.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\WebGrease.dll
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\PagedList.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.Razor.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\EntityFramework.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\mkopo\Downloads\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\mkopo\Downloads\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Users\mkopo\Downloads\Shop\Shop\obj\Debug\Shop.dll
+C:\Users\mkopo\Downloads\Shop\Shop\obj\Debug\Shop.pdb
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\ApplicationInsights.config
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\csc.exe
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\vbc.exe
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Shop.dll.config
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Shop.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Shop.pdb
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Antlr3.Runtime.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\EntityFramework.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\EntityFramework.SqlServer.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.Web.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Newtonsoft.Json.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Owin.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\PagedList.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\PagedList.Mvc.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Helpers.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Mvc.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Optimization.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Razor.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\WebGrease.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.Web.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\PagedList.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\PagedList.Mvc.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Helpers.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Mvc.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Optimization.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.Razor.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Antlr3.Runtime.pdb
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Newtonsoft.Json.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\EntityFramework.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\EntityFramework.SqlServer.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\obj\Debug\Shop.dll
+D:\Studia\Inzyniera mi się zachciało\wersje apki\Shop\Shop\obj\Debug\Shop.pdb
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\ApplicationInsights.config
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\csc.exe
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\vbc.exe
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.dll.config
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Shop.pdb
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Owin.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Razor.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\WebGrease.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.Razor.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.dll
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.pdb
+C:\Users\mkopo\Documents\Visual Studio 2015\Projects\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\ApplicationInsights.config
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\csc.exe
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\vbc.exe
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\VBCSCompiler.exe
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Shop.dll.config
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Shop.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Shop.pdb
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Antlr3.Runtime.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\EntityFramework.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\EntityFramework.SqlServer.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.Web.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Newtonsoft.Json.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Owin.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\PagedList.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\PagedList.Mvc.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Helpers.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Mvc.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Optimization.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Razor.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.Razor.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\WebGrease.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.Web.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\PagedList.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\PagedList.Mvc.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Helpers.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Mvc.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Optimization.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.Razor.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\System.Web.WebPages.Razor.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Antlr3.Runtime.pdb
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Newtonsoft.Json.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\EntityFramework.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\EntityFramework.SqlServer.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\obj\Debug\Shop.csproj.AssemblyReference.cache
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\obj\Debug\Shop.csproj.CopyComplete
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\obj\Debug\Shop.dll
+C:\Users\domko\Documents\Repository\Projekty\Shop\Shop\obj\Debug\Shop.pdb

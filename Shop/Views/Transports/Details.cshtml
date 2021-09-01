@@ -1,0 +1,76 @@
+﻿@model Shop.Models.Transport
+
+@{
+    ViewBag.Title = "Szczegóły";
+}
+
+<h2>Szczegóły</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransportTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransportTime)
+        </dd>
+
+    </dl>
+</div>
+<table class="table">
+    <tr>
+
+        <th>
+            Nazwa
+        </th>
+        <th>
+            Ilosc
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.TransportProductQuantity)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+</p>

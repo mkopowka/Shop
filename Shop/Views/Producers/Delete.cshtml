@@ -1,0 +1,44 @@
+﻿@model Shop.Models.Producer
+
+@{
+    ViewBag.Title = "Usuwanie Producenta";
+}
+
+<h2>Czy na pewno chcesz usunąć tego producenta?</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dd>
+            <img src="~/Resources/@Model.Photo" alt="Zdj" height="200" width="200" />
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
+                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+            </div>
+            </div>
+            }
+        </div>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Shop.Models.Cart>
+@using Shop.Models;
+@{
+    ViewBag.Title = "Twój koszyk";
+}
+
+@{
+    if (Session["Basket"] != null && ((List<Cart>)Session["Basket"]).Count != 0)
+    {
+        using (Html.BeginForm("UpdateBasket", "Carts", FormMethod.Post))
+        {
+            <h2>Produty w koszyku</h2>
+            <table border="1">
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                    <th>Ilość</th>
+                    <th>Całość</th>
+                    <th>Opcje</th>
+                </tr>
+
+                @foreach (var basket in (List<Cart>)Session["Basket"])
+                {
+                    <tr>
+                        <td>@basket.Product.Name</td>
+                       
+                        <td>@basket.Product.Price zł</td>
+                        <td>
+                            <input type="text" name="quantity" value="@basket.Quantity" />
+                        </td>
+                        <td>@(String.Format("{0:N0}", basket.Product.Price * basket.Quantity))zł</td>
+                        <td>@Html.ActionLink("Usuń", "Delete", "Carts", new { id = basket.Product.Id }, new { })</td>
+                    </tr>
+                }
+                <tr>
+                    <td colspan="3">Kurier:</td>
+                    <td>16 zł</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Całkowite zamówienie:</td>
+                    <td>
+                        @{
+                            List<Cart> tmp = (List<Cart>)Session["Basket"];
+                            var kurier = 16;
+                            var total = String.Format("{0:N0}", tmp.Sum(x => x.Quantity * x.Product.Price+kurier));
+                        }
+                        @total zł
+                    </td>
+                </tr>
+            </table>
+
+            <br />
+                            <input type="submit" value="Aktualizuj Koszyk" class="btn btn-primary btn-large" />
+                            }
+                            <br />
+                            @Html.ActionLink("Dalej ", "Create", "Orders", null, new { @class = "btn btn-primary btn-large" })
+                            }
+                            else
+                            {
+                                <h4> Twój koszyk aktualnie jest pusty dodaj produkt do koszyka!</h4>
+                                @Html.ActionLink("Produkty ", "Index", "Products", null, new { @class = "btn btn-primary btn-large" })
+
+                            }
+}

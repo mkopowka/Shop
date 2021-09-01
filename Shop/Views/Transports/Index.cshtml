@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Shop.Models.Transport>
+
+@{
+    ViewBag.Title = "Lista transportów";
+}
+
+<h2>Lista transportów</h2>
+
+<p>
+    @Html.ActionLink("Dodaj Transport", "Create", null, new { @class = "btn btn-primary btn-large" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Numer Zamówienia
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FromId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToId)
+        </th>
+        <th>
+            Data Wysłania
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href='@Url.Action("UserDetails", "Orders", new { id = item.Id }, null)'>@Html.DisplayFor(modelItem => item.Order.Id)</a>
+        <td>
+            @Html.DisplayFor(modelItem => item.FromId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransportTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edytuj", "Edit", new { id=item.Id,  @class = "btn btn-primary btn-large" }) 
+            @Html.ActionLink("Szczegóły", "Details", new { id=item.Id, @class = "btn btn-primary btn-large"  }) 
+            @Html.ActionLink("Usuń", "Delete", new { id = item.Id, @class = "btn btn-primary btn-large"  })
+            
+        </td>
+    </tr>
+}
+
+</table>

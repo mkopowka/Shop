@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Edmx Version="3.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <Runtime>
+    <ConceptualModels>
+      <Schema Namespace="Shop.DAL" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Adress" customannotation:ClrType="Shop.Models.Adress, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SecondName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Voivodeship" Type="Self.Voivodeship" Nullable="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HouseNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Self.User_Adress" FromRole="User_Adress_Target" ToRole="User_Adress_Source" />
+        </EntityType>
+        <EntityType Name="User" customannotation:ClrType="Shop.Models.User, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Adress" Relationship="Self.User_Adress" FromRole="User_Adress_Source" ToRole="User_Adress_Target" />
+          <NavigationProperty Name="Order" Relationship="Self.Order_User" FromRole="Order_User_Target" ToRole="Order_User_Source" />
+        </EntityType>
+        <EntityType Name="Order" customannotation:ClrType="Shop.Models.Order, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="AdresId" Type="Int32" Nullable="false" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+          <Property Name="OrderStatus" Type="Self.OrderStatus" Nullable="false" />
+          <Property Name="SendOrder" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Address" Relationship="Self.Order_Address" FromRole="Order_Address_Source" ToRole="Order_Address_Target" />
+          <NavigationProperty Name="Koszyk" Relationship="Self.Cart_Order" FromRole="Cart_Order_Target" ToRole="Cart_Order_Source" />
+          <NavigationProperty Name="Transport" Relationship="Self.Transport_Order" FromRole="Transport_Order_Target" ToRole="Transport_Order_Source" />
+          <NavigationProperty Name="User" Relationship="Self.Order_User" FromRole="Order_User_Source" ToRole="Order_User_Target" />
+        </EntityType>
+        <EntityType Name="Cart" customannotation:ClrType="Shop.Models.Cart, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="Self.Cart_Order" FromRole="Cart_Order_Source" ToRole="Cart_Order_Target" />
+          <NavigationProperty Name="Product" Relationship="Self.Cart_Product" FromRole="Cart_Product_Source" ToRole="Cart_Product_Target" />
+        </EntityType>
+        <EntityType Name="Product" customannotation:ClrType="Shop.Models.Product, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="ProducerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.Category_Product" FromRole="Category_Product_Target" ToRole="Category_Product_Source" />
+          <NavigationProperty Name="Producer" Relationship="Self.Producer_Product" FromRole="Producer_Product_Target" ToRole="Producer_Product_Source" />
+          <NavigationProperty Name="QuantityWarehouse" Relationship="Self.QuantityWarehouse_Product" FromRole="QuantityWarehouse_Product_Target" ToRole="QuantityWarehouse_Product_Source" />
+        </EntityType>
+        <EntityType Name="Category" customannotation:ClrType="Shop.Models.Category, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Product" Relationship="Self.Category_Product" FromRole="Category_Product_Source" ToRole="Category_Product_Target" />
+        </EntityType>
+        <EntityType Name="Producer" customannotation:ClrType="Shop.Models.Producer, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Product" Relationship="Self.Producer_Product" FromRole="Producer_Product_Source" ToRole="Producer_Product_Target" />
+        </EntityType>
+        <EntityType Name="QuantityWarehouse" customannotation:ClrType="Shop.Models.QuantityWarehouse, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="WarehouseId" Type="Int32" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.QuantityWarehouse_Product" FromRole="QuantityWarehouse_Product_Source" ToRole="QuantityWarehouse_Product_Target" />
+          <NavigationProperty Name="Warehouse" Relationship="Self.Warehouse_QuantityWarehouse" FromRole="Warehouse_QuantityWarehouse_Target" ToRole="Warehouse_QuantityWarehouse_Source" />
+        </EntityType>
+        <EntityType Name="Warehouse" customannotation:ClrType="Shop.Models.Warehouse, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Voivodeship" Type="Self.Voivodeship" Nullable="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BuildingNumber" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="QuantityWarehouse" Relationship="Self.Warehouse_QuantityWarehouse" FromRole="Warehouse_QuantityWarehouse_Source" ToRole="Warehouse_QuantityWarehouse_Target" />
+          <NavigationProperty Name="Transport" Relationship="Self.Transport_Warehouse" FromRole="Transport_Warehouse_Target" ToRole="Transport_Warehouse_Source" />
+        </EntityType>
+        <EntityType Name="Transport" customannotation:ClrType="Shop.Models.Transport, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FromId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ToId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TransportTime" Type="DateTime" Nullable="false" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="Self.Transport_Order" FromRole="Transport_Order_Source" ToRole="Transport_Order_Target" />
+          <NavigationProperty Name="TransportProductQuantity" Relationship="Self.TransportProductQuantity_Transport" FromRole="TransportProductQuantity_Transport_Target" ToRole="TransportProductQuantity_Transport_Source" />
+          <NavigationProperty Name="Warehouse" Relationship="Self.Transport_Warehouse" FromRole="Transport_Warehouse_Source" ToRole="Transport_Warehouse_Target" />
+        </EntityType>
+        <EntityType Name="TransportProductQuantity" customannotation:ClrType="Shop.Models.TransportProductQuantity, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransportID" Type="Int32" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.TransportProductQuantity_Product" FromRole="TransportProductQuantity_Product_Source" ToRole="TransportProductQuantity_Product_Target" />
+          <NavigationProperty Name="Transport" Relationship="Self.TransportProductQuantity_Transport" FromRole="TransportProductQuantity_Transport_Source" ToRole="TransportProductQuantity_Transport_Target" />
+        </EntityType>
+        <EnumType Name="Voivodeship" IsFlags="false" customannotation:ClrType="Shop.Models.Voivodeship, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" UnderlyingType="Int32">
+          <Member Name="Dolnośląskie" Value="0" />
+          <Member Name="Kujawskopomorskie" Value="1" />
+          <Member Name="Lubelskie" Value="2" />
+          <Member Name="Lubuskie" Value="3" />
+          <Member Name="Łódzkie" Value="4" />
+          <Member Name="Małopolskie" Value="5" />
+          <Member Name="Mazowieckie" Value="6" />
+          <Member Name="Opolskie" Value="7" />
+          <Member Name="Podkarpackie" Value="8" />
+          <Member Name="Podlaskie" Value="9" />
+          <Member Name="Pomorskie" Value="10" />
+          <Member Name="Śląskie" Value="11" />
+          <Member Name="Świętokrzyskie" Value="12" />
+          <Member Name="Warmińskomazurskie" Value="13" />
+          <Member Name="Wielkopolskie" Value="14" />
+          <Member Name="Zachodniopomorskie" Value="15" />
+        </EnumType>
+        <EnumType Name="OrderStatus" IsFlags="false" customannotation:ClrType="Shop.Models.OrderStatus, Shop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" UnderlyingType="Int32">
+          <Member Name="Przyjęto" Value="0" />
+          <Member Name="Realizacja" Value="1" />
+          <Member Name="Wysłano" Value="2" />
+          <Member Name="Anulowano" Value="3" />
+        </EnumType>
+        <Association Name="User_Adress">
+          <End Role="User_Adress_Source" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="User_Adress_Target" Type="Self.Adress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Adress_Source">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User_Adress_Target">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Order_Address">
+          <End Role="Order_Address_Source" Type="Self.Order" Multiplicity="*" />
+          <End Role="Order_Address_Target" Type="Self.Adress" Multiplicity="0..1" />
+        </Association>
+        <Association Name="Cart_Order">
+          <End Role="Cart_Order_Source" Type="Self.Cart" Multiplicity="*" />
+          <End Role="Cart_Order_Target" Type="Self.Order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Cart_Order_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cart_Order_Source">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Category_Product">
+          <End Role="Category_Product_Source" Type="Self.Category" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Category_Product_Target" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category_Product_Source">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Category_Product_Target">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Producer_Product">
+          <End Role="Producer_Product_Source" Type="Self.Producer" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Producer_Product_Target" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producer_Product_Source">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Producer_Product_Target">
+              <PropertyRef Name="ProducerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="QuantityWarehouse_Product">
+          <End Role="QuantityWarehouse_Product_Source" Type="Self.QuantityWarehouse" Multiplicity="*" />
+          <End Role="QuantityWarehouse_Product_Target" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="QuantityWarehouse_Product_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="QuantityWarehouse_Product_Source">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Warehouse_QuantityWarehouse">
+          <End Role="Warehouse_QuantityWarehouse_Source" Type="Self.Warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Warehouse_QuantityWarehouse_Target" Type="Self.QuantityWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse_QuantityWarehouse_Source">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Warehouse_QuantityWarehouse_Target">
+              <PropertyRef Name="WarehouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Transport_Order">
+          <End Role="Transport_Order_Source" Type="Self.Transport" Multiplicity="*" />
+          <End Role="Transport_Order_Target" Type="Self.Order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Transport_Order_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Transport_Order_Source">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TransportProductQuantity_Product">
+          <End Role="TransportProductQuantity_Product_Source" Type="Self.TransportProductQuantity" Multiplicity="*" />
+          <End Role="TransportProductQuantity_Product_Target" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="TransportProductQuantity_Product_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransportProductQuantity_Product_Source">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TransportProductQuantity_Transport">
+          <End Role="TransportProductQuantity_Transport_Source" Type="Self.TransportProductQuantity" Multiplicity="*" />
+          <End Role="TransportProductQuantity_Transport_Target" Type="Self.Transport" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="TransportProductQuantity_Transport_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransportProductQuantity_Transport_Source">
+              <PropertyRef Name="TransportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Transport_Warehouse">
+          <End Role="Transport_Warehouse_Source" Type="Self.Transport" Multiplicity="*" />
+          <End Role="Transport_Warehouse_Target" Type="Self.Warehouse" Multiplicity="0..1" />
+        </Association>
+        <Association Name="Cart_Product">
+          <End Role="Cart_Product_Source" Type="Self.Cart" Multiplicity="*" />
+          <End Role="Cart_Product_Target" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Cart_Product_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cart_Product_Source">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Order_User">
+          <End Role="Order_User_Source" Type="Self.Order" Multiplicity="*" />
+          <End Role="Order_User_Target" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="Order_User_Target">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order_User_Source">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ShopContext" customannotation:UseClrTypes="true">
+          <EntitySet Name="Adresses" EntityType="Self.Adress" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="Orders" EntityType="Self.Order" />
+          <EntitySet Name="Carts" EntityType="Self.Cart" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Producers" EntityType="Self.Producer" />
+          <EntitySet Name="QuantityWarehouses" EntityType="Self.QuantityWarehouse" />
+          <EntitySet Name="Warehouses" EntityType="Self.Warehouse" />
+          <EntitySet Name="Transports" EntityType="Self.Transport" />
+          <EntitySet Name="TransportProductQuantities" EntityType="Self.TransportProductQuantity" />
+          <AssociationSet Name="User_Adress" Association="Self.User_Adress">
+            <End Role="User_Adress_Source" EntitySet="Users" />
+            <End Role="User_Adress_Target" EntitySet="Adresses" />
+          </AssociationSet>
+          <AssociationSet Name="Order_Address" Association="Self.Order_Address">
+            <End Role="Order_Address_Source" EntitySet="Orders" />
+            <End Role="Order_Address_Target" EntitySet="Adresses" />
+          </AssociationSet>
+          <AssociationSet Name="Cart_Order" Association="Self.Cart_Order">
+            <End Role="Cart_Order_Source" EntitySet="Carts" />
+            <End Role="Cart_Order_Target" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="Category_Product" Association="Self.Category_Product">
+            <End Role="Category_Product_Source" EntitySet="Categories" />
+            <End Role="Category_Product_Target" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="Producer_Product" Association="Self.Producer_Product">
+            <End Role="Producer_Product_Source" EntitySet="Producers" />
+            <End Role="Producer_Product_Target" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="QuantityWarehouse_Product" Association="Self.QuantityWarehouse_Product">
+            <End Role="QuantityWarehouse_Product_Source" EntitySet="QuantityWarehouses" />
+            <End Role="QuantityWarehouse_Product_Target" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="Warehouse_QuantityWarehouse" Association="Self.Warehouse_QuantityWarehouse">
+            <End Role="Warehouse_QuantityWarehouse_Source" EntitySet="Warehouses" />
+            <End Role="Warehouse_QuantityWarehouse_Target" EntitySet="QuantityWarehouses" />
+          </AssociationSet>
+          <AssociationSet Name="Transport_Order" Association="Self.Transport_Order">
+            <End Role="Transport_Order_Source" EntitySet="Transports" />
+            <End Role="Transport_Order_Target" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="TransportProductQuantity_Product" Association="Self.TransportProductQuantity_Product">
+            <End Role="TransportProductQuantity_Product_Source" EntitySet="TransportProductQuantities" />
+            <End Role="TransportProductQuantity_Product_Target" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="TransportProductQuantity_Transport" Association="Self.TransportProductQuantity_Transport">
+            <End Role="TransportProductQuantity_Transport_Source" EntitySet="TransportProductQuantities" />
+            <End Role="TransportProductQuantity_Transport_Target" EntitySet="Transports" />
+          </AssociationSet>
+          <AssociationSet Name="Transport_Warehouse" Association="Self.Transport_Warehouse">
+            <End Role="Transport_Warehouse_Source" EntitySet="Transports" />
+            <End Role="Transport_Warehouse_Target" EntitySet="Warehouses" />
+          </AssociationSet>
+          <AssociationSet Name="Cart_Product" Association="Self.Cart_Product">
+            <End Role="Cart_Product_Source" EntitySet="Carts" />
+            <End Role="Cart_Product_Target" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="Order_User" Association="Self.Order_User">
+            <End Role="Order_User_Source" EntitySet="Orders" />
+            <End Role="Order_User_Target" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </ConceptualModels>
+    <Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CodeFirstDatabase" CdmEntityContainer="ShopContext">
+          <EntitySetMapping Name="Adresses">
+            <EntityTypeMapping TypeName="Shop.DAL.Adress">
+              <MappingFragment StoreEntitySet="Adress">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Voivodeship" ColumnName="Voivodeship" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Shop.DAL.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="Shop.DAL.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="AdresId" ColumnName="AdresId" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="SendOrder" ColumnName="SendOrder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Carts">
+            <EntityTypeMapping TypeName="Shop.DAL.Cart">
+              <MappingFragment StoreEntitySet="Cart">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="Shop.DAL.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ProducerId" ColumnName="ProducerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="Shop.DAL.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Producers">
+            <EntityTypeMapping TypeName="Shop.DAL.Producer">
+              <MappingFragment StoreEntitySet="Producer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuantityWarehouses">
+            <EntityTypeMapping TypeName="Shop.DAL.QuantityWarehouse">
+              <MappingFragment StoreEntitySet="QuantityWarehouse">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Warehouses">
+            <EntityTypeMapping TypeName="Shop.DAL.Warehouse">
+              <MappingFragment StoreEntitySet="Warehouse">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Voivodeship" ColumnName="Voivodeship" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="BuildingNumber" ColumnName="BuildingNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transports">
+            <EntityTypeMapping TypeName="Shop.DAL.Transport">
+              <MappingFragment StoreEntitySet="Transport">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FromId" ColumnName="FromId" />
+                <ScalarProperty Name="ToId" ColumnName="ToId" />
+                <ScalarProperty Name="TransportTime" ColumnName="TransportTime" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransportProductQuantities">
+            <EntityTypeMapping TypeName="Shop.DAL.TransportProductQuantity">
+              <MappingFragment StoreEntitySet="TransportProductQuantity">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Order_Address" TypeName="Shop.DAL.Order_Address" StoreEntitySet="Order">
+            <EndProperty Name="Order_Address_Target">
+              <ScalarProperty Name="Id" ColumnName="Address_Id" />
+            </EndProperty>
+            <EndProperty Name="Order_Address_Source">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="Address_Id" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="Transport_Warehouse" TypeName="Shop.DAL.Transport_Warehouse" StoreEntitySet="Transport">
+            <EndProperty Name="Transport_Warehouse_Target">
+              <ScalarProperty Name="Id" ColumnName="Warehouse_Id" />
+            </EndProperty>
+            <EndProperty Name="Transport_Warehouse_Source">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="Warehouse_Id" />
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </Mappings>
+    <StorageModels>
+      <Schema Namespace="CodeFirstDatabaseSchema" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Adress">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" customannotation:Index="{ Name: IX_UserId, Order: 0 }" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SecondName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Voivodeship" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Street" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="HouseNumber" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="32" Nullable="true" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" customannotation:Index="{ Name: IX_UserID, Order: 0 }" Nullable="false" />
+          <Property Name="AdresId" Type="int" Nullable="false" />
+          <Property Name="OrderDate" Type="datetime" Nullable="false" />
+          <Property Name="OrderStatus" Type="int" Nullable="false" />
+          <Property Name="SendOrder" Type="datetime" Nullable="false" />
+          <Property Name="Address_Id" Type="int" customannotation:Index="{ Name: IX_Address_Id, Order: 0 }" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductId" Type="int" customannotation:Index="{ Name: IX_ProductId, Order: 0 }" Nullable="false" />
+          <Property Name="OrderId" Type="int" customannotation:Index="{ Name: IX_OrderId, Order: 0 }" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Photo" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="CategoryId" Type="int" customannotation:Index="{ Name: IX_CategoryId, Order: 0 }" Nullable="false" />
+          <Property Name="ProducerId" Type="int" customannotation:Index="{ Name: IX_ProducerId, Order: 0 }" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Photo" Type="nvarchar(max)" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Producer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Photo" Type="nvarchar(max)" Nullable="true" />
+        </EntityType>
+        <EntityType Name="QuantityWarehouse">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="WarehouseId" Type="int" customannotation:Index="{ Name: IX_WarehouseId, Order: 0 }" Nullable="false" />
+          <Property Name="ProductId" Type="int" customannotation:Index="{ Name: IX_ProductId, Order: 0 }" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Warehouse">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Voivodeship" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Street" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="BuildingNumber" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Transport">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FromId" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ToId" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TransportTime" Type="datetime" Nullable="false" />
+          <Property Name="OrderId" Type="int" customannotation:Index="{ Name: IX_OrderId, Order: 0 }" Nullable="false" />
+          <Property Name="Warehouse_Id" Type="int" customannotation:Index="{ Name: IX_Warehouse_Id, Order: 0 }" Nullable="true" />
+        </EntityType>
+        <EntityType Name="TransportProductQuantity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransportID" Type="int" customannotation:Index="{ Name: IX_TransportID, Order: 0 }" Nullable="false" />
+          <Property Name="ProductId" Type="int" customannotation:Index="{ Name: IX_ProductId, Order: 0 }" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="User_Adress">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Adress" Type="Self.Adress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adress">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Order_Address">
+          <End Role="Adress" Type="Self.Adress" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adress">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="Address_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Cart_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Category_Product">
+          <End Role="Category" Type="Self.Category" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Producer_Product">
+          <End Role="Producer" Type="Self.Producer" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ProducerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="QuantityWarehouse_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="QuantityWarehouse" Type="Self.QuantityWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="QuantityWarehouse">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Warehouse_QuantityWarehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="QuantityWarehouse" Type="Self.QuantityWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="QuantityWarehouse">
+              <PropertyRef Name="WarehouseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Transport_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Transport" Type="Self.Transport" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Transport">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TransportProductQuantity_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TransportProductQuantity" Type="Self.TransportProductQuantity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransportProductQuantity">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TransportProductQuantity_Transport">
+          <End Role="Transport" Type="Self.Transport" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TransportProductQuantity" Type="Self.TransportProductQuantity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transport">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransportProductQuantity">
+              <PropertyRef Name="TransportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Transport_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="0..1" />
+          <End Role="Transport" Type="Self.Transport" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Transport">
+              <PropertyRef Name="Warehouse_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Cart_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Order_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CodeFirstDatabase">
+          <EntitySet Name="Adress" EntityType="Self.Adress" Schema="dbo" Table="Adresses" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" Table="Users" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" Table="Orders" />
+          <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" Table="Carts" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" Table="Products" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" Table="Categories" />
+          <EntitySet Name="Producer" EntityType="Self.Producer" Schema="dbo" Table="Producers" />
+          <EntitySet Name="QuantityWarehouse" EntityType="Self.QuantityWarehouse" Schema="dbo" Table="QuantityWarehouses" />
+          <EntitySet Name="Warehouse" EntityType="Self.Warehouse" Schema="dbo" Table="Warehouses" />
+          <EntitySet Name="Transport" EntityType="Self.Transport" Schema="dbo" Table="Transports" />
+          <EntitySet Name="TransportProductQuantity" EntityType="Self.TransportProductQuantity" Schema="dbo" Table="TransportProductQuantities" />
+          <AssociationSet Name="User_Adress" Association="Self.User_Adress">
+            <End Role="User" EntitySet="User" />
+            <End Role="Adress" EntitySet="Adress" />
+          </AssociationSet>
+          <AssociationSet Name="Order_Address" Association="Self.Order_Address">
+            <End Role="Adress" EntitySet="Adress" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="Cart_Order" Association="Self.Cart_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="Cart" EntitySet="Cart" />
+          </AssociationSet>
+          <AssociationSet Name="Category_Product" Association="Self.Category_Product">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="Producer_Product" Association="Self.Producer_Product">
+            <End Role="Producer" EntitySet="Producer" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="QuantityWarehouse_Product" Association="Self.QuantityWarehouse_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="QuantityWarehouse" EntitySet="QuantityWarehouse" />
+          </AssociationSet>
+          <AssociationSet Name="Warehouse_QuantityWarehouse" Association="Self.Warehouse_QuantityWarehouse">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="QuantityWarehouse" EntitySet="QuantityWarehouse" />
+          </AssociationSet>
+          <AssociationSet Name="Transport_Order" Association="Self.Transport_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="Transport" EntitySet="Transport" />
+          </AssociationSet>
+          <AssociationSet Name="TransportProductQuantity_Product" Association="Self.TransportProductQuantity_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="TransportProductQuantity" EntitySet="TransportProductQuantity" />
+          </AssociationSet>
+          <AssociationSet Name="TransportProductQuantity_Transport" Association="Self.TransportProductQuantity_Transport">
+            <End Role="Transport" EntitySet="Transport" />
+            <End Role="TransportProductQuantity" EntitySet="TransportProductQuantity" />
+          </AssociationSet>
+          <AssociationSet Name="Transport_Warehouse" Association="Self.Transport_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="Transport" EntitySet="Transport" />
+          </AssociationSet>
+          <AssociationSet Name="Cart_Product" Association="Self.Cart_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Cart" EntitySet="Cart" />
+          </AssociationSet>
+          <AssociationSet Name="Order_User" Association="Self.Order_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </StorageModels>
+  </Runtime>
+  <Designer>
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="ProcessDependentTemplatesOnSave" Value="False" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <Diagrams >
+      <Diagram DiagramId="aa62d10417204bd3aa94bcd87499d238" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="Shop.DAL.Adress" Width="1.5" PointX="8.375" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.User" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Order" Width="1.5" PointX="5.625" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Cart" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Product" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Category" Width="1.5" PointX="5.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Producer" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.QuantityWarehouse" Width="1.5" PointX="0.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Warehouse" Width="1.5" PointX="0.5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.Transport" Width="1.5" PointX="3.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shop.DAL.TransportProductQuantity" Width="1.5" PointX="3.625" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="Shop.DAL.User_Adress" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Order_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Cart_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Category_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Producer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.QuantityWarehouse_Product" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2" PointY="3.8458993098958327" />
+          <ConnectorPoint PointX="3.28125" PointY="3.8458993098958327" />
+          <ConnectorPoint PointX="3.28125" PointY="3.4417936197916639" />
+        </AssociationConnector>
+        <AssociationConnector Association="Shop.DAL.Warehouse_QuantityWarehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Transport_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.TransportProductQuantity_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.TransportProductQuantity_Transport" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Transport_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Cart_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Shop.DAL.Order_User" ManuallyRouted="false" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</Edmx>

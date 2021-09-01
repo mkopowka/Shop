@@ -1,0 +1,127 @@
+﻿@model Shop.Models.Transport
+
+@{
+    ViewBag.Title = "Dodaj Transport";
+}
+
+<h2>Dodaj Transport</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            <span class="control-label col-md-2"> Nr zamówienia: </span>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.OrderId, (SelectList)ViewBag.oreList, "Wybierz Zamówienie", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.OrderId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span class="control-label col-md-2"> Skąd</span>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.FromId, (SelectList)ViewBag.wareList, "Wybierz Magazyn", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.FromId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span class="control-label col-md-2"> Dokąd</span>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ToId, (SelectList)ViewBag.wareList, "Wybierz Magazyn", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ToId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TransportTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TransportTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TransportTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <table class="table">
+            <tr>
+
+                <th>
+                    Nazwa
+                </th>
+                <th>
+                    Ilosc
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.TransportProductQuantity)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Name)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Dodaj Transport" class="btn btn-primary btn-large" /><br /><br />
+                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+            </div>
+        </div>
+    </div>
+}
+
+<h2>Dodaj Produkt</h2>
+
+<div class="form-horizontal">
+
+    @using (Html.BeginForm("DodajProdukt", "Transports", FormMethod.Post))
+    {
+
+        @Html.Hidden("TransportID", Model.Id)
+        @Html.DropDownList("ProductId", null, new { id = "normalDropDown", @class = "form-control" })
+        <br />
+        @Html.TextBox("Quantity", null, new { @class = "form-control" })
+        <br />
+        <div class="form-group">
+                <input type="submit" value="Dodaj" class="btn btn-primary btn-large" />
+        </div>
+
+    }
+</div>
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        $(function () {
+            //normal dropdown
+            $("#normalDropDown").chosen({
+                //disable_search_threshold : 5
+            });
+
+            //multiselect DropDown
+            //$("#multiSelectDropDown").chosen({
+            //    width : "100%"
+            //});
+        });
+
+    </script>
+}

@@ -1,0 +1,111 @@
+﻿@model Shop.Models.Order
+
+@{
+    ViewBag.Title = "Szczegóły zamówienia";
+}
+
+<h2>Szczegóły zamówienia</h2>
+
+<div>
+    <h4>Zamówienie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+
+        <dt>
+           Imie
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.FirstName)
+        </dd>
+
+
+        <dt>
+            Nazwisko
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.SecondName)
+        </dd>
+
+
+        <dt>
+            Kod Pocztowy
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.PostalCode)
+        </dd>
+
+
+        <dt>
+            Miasto
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.City)
+        </dd>
+
+
+        <dt>
+            Ulica
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Street)
+        </dd>
+
+
+        <dt>
+            Numer Domu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.HouseNumber)
+        </dd>
+
+        <dt>
+            Województwo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Voivodeship)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SendOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SendOrder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edytuj", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Powrót", "Index")
+</p>
