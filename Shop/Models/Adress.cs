@@ -13,32 +13,32 @@ namespace Shop.Models
 
         public int UserId { get; set; }
 
-        [Display(Name = "Imię")]
-        [Required(ErrorMessage = "Musisz podać imię!")]
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Error! You need add name")]
         public string FirstName { get; set; }
 
-        [Display(Name = "Nazwisko")]
-        [Required(ErrorMessage = "Musisz podać nazwisko!")]
+        [Display(Name = "Last Name")]
+        [Required(ErrorMessage = "Error! You need add Last Name")]
         public string SecondName { get; set; }
 
-        [Display(Name = "Miasto")]
-        [Required(ErrorMessage = "Musisz podać miasto!")]
+        [Display(Name = "City")]
+        [Required(ErrorMessage = "Error! You need add City")]
         public string City { get; set; }
 
-        [Display(Name = "Województwo")]
-        [Required(ErrorMessage = "Musisz wybrać województwo!")]
+        [Display(Name = "Voivodeship")]
+        [Required(ErrorMessage = "Error! You need select Voivodeship")]
         public Voivodeship? Voivodeship { get; set; }
 
-        [Display(Name = "Kod Pocztowy")]
-        [Required(ErrorMessage = "Musisz podać kod pocztowy!")]
+        [Display(Name = "Postal Code")]
+        [Required(ErrorMessage = "Error! You need add Postal Code")]
         public string PostalCode { get; set; }
 
-        [Display(Name = "Ulica")]
-        [Required(ErrorMessage = "Musisz podać ulicę!")]
+        [Display(Name = "Street")]
+        [Required(ErrorMessage = "Error! You need add Street")]
         public string Street { get; set; }
 
-        [Display(Name = "Numer Domu")]
-        [Required(ErrorMessage = "Musisz podać numer domu!")]
+        [Display(Name = "HouseNumber")]
+        [Required(ErrorMessage = "Error! You need add House Number")]
         public string HouseNumber { get; set; }
 
         public virtual User User { get; set; }

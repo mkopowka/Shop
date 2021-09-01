@@ -10,15 +10,15 @@ namespace Shop.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Nazwa")]
-        [Required(ErrorMessage = "Musisz podać nazwę kategorii!")]
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Error! You need give name to your category")]
         public string Name { get; set; }
 
-        [Display(Name = "Opis")]
-        [Required(ErrorMessage = "Musisz podać opis kategorii!")]
+        [Display(Name = "Description")]
+        [Required(ErrorMessage = "Error! You need add description")]
         public string Description { get; set; }
 
-        [Display(Name = "Zdjęcie")]
+        [Display(Name = "Photo")]
         public string Photo { get; set; }
 
         public virtual ICollection<Product> Product { get; set; }

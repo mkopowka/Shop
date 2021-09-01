@@ -1,16 +1,16 @@
 ﻿@model Shop.Models.Producer
 
 @{
-    ViewBag.Title = "Szczegóły Producenta";
+    ViewBag.Title = "Details";
 }
 
-<h2>Szczegóły Producenta</h2>
+<h2>Details</h2>
 
 <div>
     <hr />
     <dl class="dl-horizontal">
         <dd>
-            <img src="~/Resources/@Model.Photo" alt="Zdj" height="30%" width="30%" />
+            <img src="~/Resources/@Model.Photo" alt="Zdj" height="250" width="250" />
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -33,5 +33,5 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+    @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
 </p>

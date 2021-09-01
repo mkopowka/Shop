@@ -17,21 +17,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="@Url.Action("Index", "")" class="navbar-brand">
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
                     <img src="~/Resources/logo.png" title="title" alt="additional title" />
                 </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Produkty", "Index", "Products")</li>
-                    <li>@Html.ActionLink("Kategorie", "Index", "Categories")</li>
-                    <li>@Html.ActionLink("Producenci", "Index", "Producers")</li>
-                    <li>@Html.ActionLink("Koszyk", "Index", "Carts")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Producers", "Index", "Producers")</li>
+                    <li>@Html.ActionLink("Cart", "Index", "Carts")</li>
                     @if (Context.User.IsInRole("Admin"))
                     {
-                        <li>@Html.ActionLink("Zamówienia", "Index", "Orders")</li>
-                        <li>@Html.ActionLink("Magazyny", "Index", "Warehouses")</li>
-                        <li>@Html.ActionLink("Transporty", "Index", "Transports")</li>
+                        <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
+                        <li>@Html.ActionLink("Warehouses", "Index", "Warehouses")</li>
+                        <li>@Html.ActionLink("Transports", "Index", "Transports")</li>
                     }
 
                    

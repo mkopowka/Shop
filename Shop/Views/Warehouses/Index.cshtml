@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Shop.Models.Warehouse>
 
 @{
-    ViewBag.Title = "Magazyny";
+    ViewBag.Title = "Warehouses";
 }
 
-<h2>Lista Magazynów</h2>
+<h2>Warehouses</h2>
 
     <ul id="warelist">
-          <li >@Html.ActionLink("Dodaj Magazyn ", "Create", null, new { @class = "btn btn-primary btn-large" })</li>
-          <li>@Html.ActionLink("Stan Magazynów", "Index", "QuantityWarehouses", null, new { @class = "btn btn-primary btn-large" })</li>
+          <li >@Html.ActionLink("Add Warehouse ", "Create", null, new { @class = "btn btn-primary btn-large" })</li>
+          <li>@Html.ActionLink("Warehouses", "Index", "QuantityWarehouses", null, new { @class = "btn btn-primary btn-large" })</li>
     </ul>
 <p>
 
@@ -16,31 +16,31 @@
 <table class="table">
     <tr>
         <th>
-            Nr magazynu
+            @Html.DisplayNameFor(model => model.Id)
         </th>
 
         <th>
-            Miasto
+            @Html.DisplayNameFor(model => model.City)
         </th>
 
         <th>
-            Kod Pocztowy
+            @Html.DisplayNameFor(model => model.PostalCode)
         </th>
 
         <th>
-            Ulica
+            @Html.DisplayNameFor(model => model.Street)
         </th>
 
         <th>
-            Nr Budynku
+            @Html.DisplayNameFor(model => model.BuildingNumber)
         </th>
 
         <th>
-            Województwo
+            @Html.DisplayNameFor(model => model.Voivodeship)
         </th>
 
         <th>
-            Opcje
+            Options
         </th>
     </tr>
 
@@ -73,8 +73,8 @@
 
             <td>
 
-                @Html.ActionLink("Edytuj", "Edit", new { id = item.Id })
-                @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
 
         </tr>

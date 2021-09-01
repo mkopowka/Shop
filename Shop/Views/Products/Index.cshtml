@@ -2,7 +2,7 @@
 @using PagedList.Mvc;
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
-    ViewBag.Title = "Produkty";
+    ViewBag.Title = "Products";
 }
 
 <div id="row">
@@ -11,8 +11,8 @@
         @using (Html.BeginForm("Index", "Products", FormMethod.Get))
         {
             <p>
-                Wyszukaj: @Html.TextBox("SearchString")
-                <input type="submit" value="Szukaj" class="btn btn-primary btn-large" />
+                Search: @Html.TextBox("SearchString")
+                <input type="submit" value="Search" class="btn btn-primary btn-large" />
             </p>
 
         }
@@ -20,12 +20,12 @@
 
         @if (Context.User.IsInRole("Admin"))
         {
-            @Html.ActionLink("Dodaj Produkt", "Create", null, new { @class = "btn btn-primary btn-large" })
+            @Html.ActionLink("Add Product", "Create", null, new { @class = "btn btn-primary btn-large" })
         }
-        Sortowanie:
-        <li>@Html.ActionLink("Nazwa Producenta", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
-        <li>@Html.ActionLink("Nazwa", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
-        <li>@Html.ActionLink("Cena", "Index", new { sortOrder = ViewBag.CenaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+        Sort by:
+        <li>@Html.ActionLink("Producer Name", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+        <li>@Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NazwaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
+        <li>@Html.ActionLink("Price", "Index", new { sortOrder = ViewBag.CenaSortParm, currentFilter = ViewBag.CurrentFilter })</li>
     </ul>
 </div>
 <br>
@@ -48,8 +48,8 @@
                 </a>
                 @if (Context.User.IsInRole("Admin"))
                 {
-                    @Html.ActionLink("Edytuj      ", "Edit", new { id = item.Id })
-                    @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Edit      ", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 }
 
             </div>

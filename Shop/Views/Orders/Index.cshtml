@@ -1,9 +1,9 @@
 ﻿@model IEnumerable<Shop.Models.Order>
 
 @{
-    ViewBag.Title = "Wszystkie zamówienia";
+    ViewBag.Title = "All Orders";
 }
-    <h2>Wszystkie zamówienia</h2>
+    <h2>All Orders</h2>
 
     <table class="table">
         <tr>
@@ -20,7 +20,7 @@
                 @Html.DisplayNameFor(model => model.SendOrder)
             </th>
             <th>
-                Opcje
+                Option
             </th>
         </tr>
 
@@ -40,8 +40,8 @@
                     @Html.DisplayFor(modelItem => item.SendOrder)
                 </td>
                 <td>
-                    @Html.ActionLink("Szczegóły ", "UserDetails", new { id = item.Id }) 
-                    @Html.ActionLink("Edytuj", "Edit", new { id = item.Id }) 
+                    @Html.ActionLink("Details ", "UserDetails", new { id = item.Id }) 
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) 
 
 
                 </td>

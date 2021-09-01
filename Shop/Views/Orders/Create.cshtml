@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.Order
 @using Shop.Models;
 @{
-    ViewBag.Title = "Zamówienie";
+    ViewBag.Title = "Order";
 }
 
-<h2>Produkty, które chcesz zamówić</h2>
+<h2>Order</h2>
     @if (ViewBag.Error!=null)
     {
         <h3>Model jest błędny.</h3>
@@ -23,10 +23,10 @@
     {
         <table border="1">
             <tr>
-                <th>Nazwa</th>
-                <th>Cena</th>
-                <th>Ilość</th>
-                <th>Całość</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
             </tr>
             @foreach (var cart in (List<Cart>)Session["Basket"])
             {
@@ -41,7 +41,7 @@
             }
 
             <tr>
-                <td colspan="3">Całkowite zamówienie:</td>
+                <td colspan="3">Total:</td>
                 <td>
                     @{
                         List<Cart> tmp = (List<Cart>)Session["Basket"];
@@ -57,7 +57,7 @@
                             @Html.AntiForgeryToken()
 
                             <div class="form-horizontal">
-                                <h4>Formularz Adresu</h4>
+                                <h4>Address</h4>
                                 <hr />
                                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
@@ -123,8 +123,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-offset-2 col-md-10">
-                                        <input type="submit" value="Zamów" class="btn btn-primary btn-large" />
-                                        <h3> Kliknięcie zamów wiąze się ze złożeniem zamówienia i obowiązkiem zapłaty!</h3>
+                                        <input type="submit" value="Order" class="btn btn-primary btn-large" />
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +131,7 @@
                         }
                         else
                         {
-                           <h3>Twój koszyk jest pusty!</h3>
+                           <h3>Cart!</h3>
                         }
 
 

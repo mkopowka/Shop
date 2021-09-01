@@ -4,7 +4,7 @@
     ViewBag.Title = "Usuwanie";
 }
 
-<h3>Czy chcesz usunąć to zamowienie?</h3>
+<h3>Are you sure?</h3>
 <div>
     <hr />
     <dl class="dl-horizontal">
@@ -54,11 +54,11 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> 
+            <input type="submit" value="Delete" class="btn btn-primary btn-large" /> 
             
         </div>
         <div>
-            @Html.ActionLink("Powrót", "Index")
+            @Html.ActionLink("Back", "Index")
         </div>
     }
 </div>

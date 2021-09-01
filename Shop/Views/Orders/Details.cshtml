@@ -4,10 +4,10 @@
     ViewBag.Title = "Szczegóły zamówienia";
 }
 
-<h2>Szczegóły zamówienia</h2>
+<h2>Order Details</h2>
 
 <div>
-    <h4>Zamówienie</h4>
+    <h4>Order</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-           Imie
+            @Html.DisplayNameFor(model => model.User.Email)
         </dt>
 
         <dd>
@@ -28,7 +28,7 @@
 
 
         <dt>
-            Nazwisko
+            @Html.DisplayNameFor(model => model.Address.SecondName)
         </dt>
 
         <dd>
@@ -37,7 +37,7 @@
 
 
         <dt>
-            Kod Pocztowy
+            @Html.DisplayNameFor(model => model.Address.PostalCode)
         </dt>
 
         <dd>
@@ -46,7 +46,7 @@
 
 
         <dt>
-            Miasto
+            @Html.DisplayNameFor(model => model.Address.City)
         </dt>
 
         <dd>
@@ -55,7 +55,7 @@
 
 
         <dt>
-            Ulica
+            @Html.DisplayNameFor(model => model.Address.Street)
         </dt>
 
         <dd>
@@ -64,7 +64,7 @@
 
 
         <dt>
-            Numer Domu
+            @Html.DisplayNameFor(model => model.Address.HouseNumber)
         </dt>
 
         <dd>
@@ -72,7 +72,7 @@
         </dd>
 
         <dt>
-            Województwo
+            @Html.DisplayNameFor(model => model.Address.Voivodeship)
         </dt>
 
         <dd>
@@ -106,6 +106,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edytuj", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Powrót", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back", "Index")
 </p>

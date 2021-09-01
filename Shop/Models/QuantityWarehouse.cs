@@ -10,7 +10,7 @@ namespace Shop.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Ilość")]
+        [Display(Name = "Quantity")]
         public int Quantity { get; set; }
 
         public int WarehouseId { get; set; }

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Shop.Models.Category>
 
 @{
-    ViewBag.Title = "Kategorie";
+    ViewBag.Title = "Cattegories";
 }
 
 @using (Html.BeginForm("Index", "Categories", FormMethod.Get))
@@ -9,10 +9,10 @@
 }
 @if (Context.User.IsInRole("Admin"))
 {
-    @Html.ActionLink("Dodaj Kategorię", "Create", null, new { @class = "btn btn-primary btn-large" })
+    @Html.ActionLink("Add Category", "Create", null, new { @class = "btn btn-primary btn-large" })
 }
 <div class="row">
-
+    <h2>Categories</h2>
     @foreach (var item in Model)
     {
         <div class="col-md-3">
@@ -23,8 +23,8 @@
                 @Html.DisplayFor(modelItem => item.Name)<br />
                 @if (Context.User.IsInRole("Admin"))
                 {
-                    @Html.ActionLink("Edytuj      ", "Edit", new { id = item.Id })
-                    @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Edit      ", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 }
 
             </div>

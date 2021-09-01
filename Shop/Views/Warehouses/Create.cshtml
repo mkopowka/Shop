@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.Warehouse
 
 @{
-    ViewBag.Title = "Dodawanie Magazynu";
+    ViewBag.Title = "Add Warehouse";
 }
 
-<h2>Dodaj Magazyn</h2>
+<h2>Add Warehouse</h2>
 
 
 @using (Html.BeginForm()) 
@@ -56,8 +56,8 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Dodaj" class="btn btn-primary btn-large" /><br /><br />
-                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+                <input type="submit" value="Add Warehouse" class="btn btn-primary btn-large" /><br /><br />
+                @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
             </div>
         </div>
     </div>

@@ -11,19 +11,19 @@ namespace Shop.Models
         public int Id { get; set; }
 
 
-        [Display(Name = "Skąd")]
-        [Required(ErrorMessage = "Musisz wybrać skąd ma wyjechać transport!")]
+        [Display(Name = "From")]
+        [Required(ErrorMessage = "Select start warehouse")]
         public int FromId { get; set; }
 
-        [Display(Name = "Do")]
-        [Required(ErrorMessage = "Musisz wybrać dokąd ma jechać transport!")]
+        [Display(Name = "To")]
+        [Required(ErrorMessage = "Select destination warehouse")]
         public int ToId { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Data Wysłania(yyyy-MM-dd)")]
+        [Display(Name = "Send Date(yyyy-MM-dd)")]
         public DateTime TransportTime { get; set; }
 
-        [Required(ErrorMessage = "Musisz wybrać numer zamówienia!")]
+        [Required(ErrorMessage = "Select order!")]
         public int OrderId { get; set; }
 
         public virtual Warehouse Warehouse { get; set; }

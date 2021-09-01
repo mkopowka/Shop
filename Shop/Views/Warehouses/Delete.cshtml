@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.Warehouse
 
 @{
-    ViewBag.Title = "Usuń magazyn";
+    ViewBag.Title = "Delete Warehouse";
 }
 
-<h2>Czy na pewno chcesz usunąć magazyn?</h2>
+<h2>Are you sure?</h2>
 
 <div>
     <hr />
@@ -55,8 +55,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
-            @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })   
+            <input type="submit" value="Delete" class="btn btn-primary btn-large" /> <br /><br />
+            @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })   
         </div>
     }
 </div>

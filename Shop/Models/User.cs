@@ -12,14 +12,14 @@ namespace Shop.Models
 
         [Display(Name = "E-mail")]
         [StringLength(20,MinimumLength = 3)]
-        [Required(ErrorMessage = "Uzupełnij email")]
+        [Required(ErrorMessage = "Add email")]
         public string Email { get; set; }
         
-        [Display(Name = "Imię")]
+        [Display(Name = "First Name")]
         [StringLength(32, MinimumLength = 3)]
         public string FirstName { get; set; }
         
-        [Display(Name = "Nazwisko")]
+        [Display(Name = "Last Name")]
         [StringLength(32, MinimumLength = 3)]
         public string LastName { get; set; }
 

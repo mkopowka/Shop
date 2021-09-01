@@ -2,21 +2,21 @@
 @using PagedList.Mvc;
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
-    ViewBag.Title = "Producenci";
+    ViewBag.Title = "Producers";
 }
 
-<h2>Producenci</h2>
+<h2>Producers</h2>
 
 @using (Html.BeginForm("Index", "Producers", FormMethod.Get))
 {
     <p>
-        Wyszukaj:@Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
-        <input type="submit" value="Szukaj" class="btn btn-primary btn-large" />
+        Search:@Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="btn btn-primary btn-large" />
     </p>
 }
 @if (Context.User.IsInRole("Admin"))
 {
-    @Html.ActionLink("Dodaj Producenta", "Create", null, new { @class = "btn btn-primary btn-large" })
+    @Html.ActionLink("Add Producer", "Create", null, new { @class = "btn btn-primary btn-large" })
 }
 <div class="row">
 
@@ -30,8 +30,8 @@
                 @Html.DisplayFor(modelItem => item.Name)<br />
                 @if (Context.User.IsInRole("Admin"))
                 {
-                    @Html.ActionLink("Edytuj      ", "Edit", new { id = item.Id })
-                    @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Edit      ", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 }
 
             </div>

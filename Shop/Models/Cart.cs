@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Shop.Models
         public int Id { get; set; }
         public int ProductId { get; set; }
         public int OrderId { get; set; }
-        [Display(Name = "Ilosc")]
+        [Display(Name = "Quantity")]
         public int Quantity { get; set; }
 
         public virtual Order Order { get; set; }

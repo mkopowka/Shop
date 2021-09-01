@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.Producer
 
 @{
-    ViewBag.Title = "Usuwanie Producenta";
+    ViewBag.Title = "Delete Producer";
 }
 
-<h2>Czy na pewno chcesz usunąć tego producenta?</h2>
+<h2>Are you sure ?</h2>
 
 <div>
     <hr />
@@ -36,8 +36,8 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
-                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+                <input type="submit" value="Delete" class="btn btn-primary btn-large" /> <br /><br />
+                @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
             </div>
             </div>
             }

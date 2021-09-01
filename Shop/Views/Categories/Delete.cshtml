@@ -4,7 +4,7 @@
     ViewBag.Title = "Usuń kategorię";
 }
 
-<h2>Czy na pewno chcesz usunąć kategorię?</h2>
+<h2>Are you sure?</h2>
 <div>
     <hr />
     <dl class="dl-horizontal">
@@ -23,15 +23,20 @@
         <dd>
             @Html.DisplayFor(model => model.Description)
         </dd>
-
+        <dd>
+            <img src="~/Resources/@Model.Photo" alt="Zdj" height="250" width="250" />
+        </dd>
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
-            @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="delete" class="btn btn-primary btn-large" />
+                @Html.ActionLink("back", "Index", null, new { @class = "btn btn-primary btn-large" })
+            </div>
         </div>
     }
 </div>

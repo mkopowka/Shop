@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.Transport
 
 @{
-    ViewBag.Title = "Dodaj Transport";
+    ViewBag.Title = "Add Transport";
 }
 
-<h2>Dodaj Transport</h2>
+<h2>Add Transport</h2>
 
 @using (Html.BeginForm()) 
 {
@@ -15,7 +15,7 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
        
         <div class="form-group">
-            <span class="control-label col-md-2"> Nr zamówienia: </span>
+            <span class="control-label col-md-2"> Order number: </span>
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.OrderId, (SelectList)ViewBag.oreList, "Wybierz Zamówienie", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.OrderId, "", new { @class = "text-danger" })
@@ -23,7 +23,7 @@
         </div>       
 
         <div class="form-group">
-            <span class="control-label col-md-2"> Skąd: </span>
+            <span class="control-label col-md-2"> From: </span>
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.FromId, (SelectList)ViewBag.wareList, "Wybierz Magazyn", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.FromId, "", new { @class = "text-danger" })
@@ -31,7 +31,7 @@
         </div>
 
         <div class="form-group">
-            <span class="control-label col-md-2"> Dokąd: </span>
+            <span class="control-label col-md-2"> To: </span>
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.ToId, (SelectList)ViewBag.wareList, "Wybierz Magazyn", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ToId, "", new { @class = "text-danger" })
@@ -48,8 +48,8 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Dalej" class="btn btn-primary btn-large" /><br /><br />
-                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+                <input type="submit" value="Add" class="btn btn-primary btn-large" /><br /><br />
+                @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
             </div>
         </div>
     </div>

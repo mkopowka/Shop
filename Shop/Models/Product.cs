@@ -12,27 +12,27 @@ namespace Shop.Models
 
         public int Id { get; set; }
 
-        [Display(Name = "Nazwa")]
-        [Required(ErrorMessage = "Musisz podać nazwę produktu!")]
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Error! You need give name to your product")]
         public string Name { get; set; }
 
-        [Display(Name = "Cena")]
-        [Required(ErrorMessage = "Musisz podać cenę!")]
+        [Display(Name = "Price")]
+        [Required(ErrorMessage = "Error! You need give price to your product")]
         public double Price { get; set; }
 
-        [Display(Name = "Opis")]
-        [Required(ErrorMessage = "Musisz podać opis produktu!")]
+        [Display(Name = "Description")]
+        [Required(ErrorMessage = "Error! You need give description to your product")]
         public string Description { get; set; }
 
-        [Display(Name = "Zdjęcie")]
+        [Display(Name = "Photo")]
         public string Photo { get; set; }
 
-        [Display(Name = "Kategoria")]
-        [Required(ErrorMessage = "Musisz wybrać kategorię!")]
+        [Display(Name = "Category")]
+        [Required(ErrorMessage = "Error! You need select category to your product")]
         public int CategoryId { get; set; }
 
-        [Display(Name = "Producent")]
-        [Required(ErrorMessage = "Musisz wybrać producenta!")]
+        [Display(Name = "Producer")]
+        [Required(ErrorMessage = "Error! You need select producer to your product")]
         public int ProducerId { get; set; }
 
         public virtual Producer Producer { get; set; }

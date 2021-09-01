@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Shop.Models.Order>
 
 @{
-    ViewBag.Title = "Moje Zamówienia";
+    ViewBag.Title = "My Orders";
 }
 
-<h2>Lista zamówień</h2>
+<h2>My Orders</h2>
 
 <table class="table">
     <tr>
@@ -18,7 +18,9 @@
             @Html.DisplayNameFor(model => model.OrderStatus)
         </th>
 
-        <th></th>
+        <th>
+            Options
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -33,7 +35,7 @@
             @Html.DisplayFor(modelItem => item.OrderStatus)
         </td>
         <td>
-            @Html.ActionLink("Szczegóły Zamówienia", "UserDetails", new { id=item.Id })
+            @Html.ActionLink("Details", "UserDetails", new { id=item.Id })
         </td>
     </tr>
 }

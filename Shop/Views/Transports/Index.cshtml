@@ -1,18 +1,17 @@
 ﻿@model IEnumerable<Shop.Models.Transport>
-
 @{
-    ViewBag.Title = "Lista transportów";
+    ViewBag.Title = "Transport List";
 }
 
-<h2>Lista transportów</h2>
+<h2>Transport List </h2>
 
 <p>
-    @Html.ActionLink("Dodaj Transport", "Create", null, new { @class = "btn btn-primary btn-large" })
+    @Html.ActionLink("Add Transport", "Create", null, new { @class = "btn btn-primary btn-large" })
 </p>
 <table class="table">
     <tr>
         <th>
-            Numer Zamówienia
+            Order Number
         </th>
         <th>
             @Html.DisplayNameFor(model => model.FromId)
@@ -21,31 +20,35 @@
             @Html.DisplayNameFor(model => model.ToId)
         </th>
         <th>
-            Data Wysłania
+            Send Date
         </th>
-        <th></th>
+        
+        <th>
+            Options
+        </th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            <a href='@Url.Action("UserDetails", "Orders", new { id = item.Id }, null)'>@Html.DisplayFor(modelItem => item.Order.Id)</a>
-        <td>
-            @Html.DisplayFor(modelItem => item.FromId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransportTime)
-        </td>
-        <td>
-            @Html.ActionLink("Edytuj", "Edit", new { id=item.Id,  @class = "btn btn-primary btn-large" }) 
-            @Html.ActionLink("Szczegóły", "Details", new { id=item.Id, @class = "btn btn-primary btn-large"  }) 
-            @Html.ActionLink("Usuń", "Delete", new { id = item.Id, @class = "btn btn-primary btn-large"  })
-            
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href='@Url.Action("UserDetails", "Orders", new { id = item.Id }, null)'>@Html.DisplayFor(modelItem => item.Order.Id)</a>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransportTime)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id, @class = "btn btn-primary btn-large" })
+                @Html.ActionLink("Details", "Details", new { id = item.Id, @class = "btn btn-primary btn-large" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id, @class = "btn btn-primary btn-large" })
+
+            </td>
+        </tr>
+    }
 
 </table>

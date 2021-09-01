@@ -16,17 +16,17 @@ namespace Shop.Models
         public int AdresId { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Data Zamówienia")]
-        [Required(ErrorMessage = "Musisz podać datę zamówienia!")]
+        [Display(Name = "Order Date")]
+        [Required(ErrorMessage = "Error! You need add order date")]
         public DateTime OrderDate { get; set; }
 
-        [Display(Name = "Status Zamówienia")]
-        [Required(ErrorMessage = "Musisz wybrać status zamówienia!")]
+        [Display(Name = "Order Status")]
+        [Required(ErrorMessage = "Error! You need change order Status")]
         public OrderStatus? OrderStatus { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Przewidywana Data Wysłania")]
-        [Required(ErrorMessage = "Musisz podać datę wysyłki!")]
+        [Display(Name = "Send Order")]
+        [Required(ErrorMessage = "Error! You need add Send Date")]
         public DateTime SendOrder { get; set; }
 
         public virtual User User { get; set; }
