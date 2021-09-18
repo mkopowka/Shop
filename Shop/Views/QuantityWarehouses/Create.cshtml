@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.QuantityWarehouse
 
 @{
-    ViewBag.Title = "Dodaj produkt do magazynu";
+    ViewBag.Title = "Add Product";
 }
 
-<h2>Dodaj produkt do magazynu</h2>
+<h2>Add Product to the Warehouse</h2>
 
 @using (Html.BeginForm()) 
 {
@@ -22,25 +22,24 @@
         </div>
 
         <div class="form-group">
-            <span class="control-label col-md-2"> Nazwa Produktu</span>
+            <span class="control-label col-md-2"> <b>Product Name</b></span>
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.ProductId, (SelectList)ViewBag.ProdList, "Wybierz Produktu", new { @class = "form-control" })
+                @Html.DropDownListFor(model => model.ProductId, (SelectList)ViewBag.ProdList, "Select Product", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ProductId, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <span class="control-label col-md-2"> Nazwa Magazynu</span>
+            <span class="control-label col-md-2"><b>Warehouse Name</b></span>
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.WarehouseId, (SelectList)ViewBag.WarList, "Wybierz Magazyn", new { @class = "form-control" })
+                @Html.DropDownListFor(model => model.WarehouseId, (SelectList)ViewBag.WarList, "Select Warehouse", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.WarehouseId, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Dodaj" class="btn btn-primary btn-large" /><br /><br />
-                @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+                <input type="submit" value="Add Product" class="btn btn-primary btn-large btn-success" />
             </div>
         </div>
     </div>

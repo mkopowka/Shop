@@ -11,11 +11,11 @@ namespace Shop.Models
         public int Id { get; set; }
 
         [Display(Name = "Producer Name")]
-        [Required(ErrorMessage = "Error! You need give producer name")]
+        [Required(ErrorMessage = "Error! You need add Producer Name!")]
         public string Name { get; set; }
 
         [Display(Name = "Description")]
-        [Required(ErrorMessage = "Error! You need add description")]
+        [Required(ErrorMessage = "Error! You need add Description!")]
         public string Description { get; set; }
 
         [Display(Name = "Photo")]

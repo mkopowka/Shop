@@ -36,9 +36,12 @@ namespace Shop.Controllers
 
             var products = from s in db.Products
                            select s;
+            var producers = from p in db.Producers
+                            select p;
             if (!String.IsNullOrEmpty(searchString))
             {
                 products = products.Where(s => s.Name.Contains(searchString));
+                producers = producers.Where(p => p.Name.Contains(searchString));
             }
             if (idc != null)
             {

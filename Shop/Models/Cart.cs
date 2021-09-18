@@ -12,6 +12,7 @@ namespace Shop.Models
         public int Id { get; set; }
         public int ProductId { get; set; }
         public int OrderId { get; set; }
+
         [Display(Name = "Quantity")]
         public int Quantity { get; set; }
 

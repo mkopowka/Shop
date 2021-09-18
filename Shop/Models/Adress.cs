@@ -14,15 +14,15 @@ namespace Shop.Models
         public int UserId { get; set; }
 
         [Display(Name = "Name")]
-        [Required(ErrorMessage = "Error! You need add name")]
+        [Required(ErrorMessage = "Error! You need add First Name!")]
         public string FirstName { get; set; }
 
         [Display(Name = "Last Name")]
-        [Required(ErrorMessage = "Error! You need add Last Name")]
+        [Required(ErrorMessage = "Error! You need add Last Name!")]
         public string SecondName { get; set; }
 
         [Display(Name = "City")]
-        [Required(ErrorMessage = "Error! You need add City")]
+        [Required(ErrorMessage = "Error! You need add City!")]
         public string City { get; set; }
 
         [Display(Name = "Voivodeship")]
@@ -37,7 +37,7 @@ namespace Shop.Models
         [Required(ErrorMessage = "Error! You need add Street")]
         public string Street { get; set; }
 
-        [Display(Name = "HouseNumber")]
+        [Display(Name = "House Number")]
         [Required(ErrorMessage = "Error! You need add House Number")]
         public string HouseNumber { get; set; }
 

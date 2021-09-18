@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.QuantityWarehouse
 
 @{
-    ViewBag.Title = "Usuń ilość z  magazynu";
+    ViewBag.Title = "Delete Product from warehouse";
 }
 
-<h2>Czy na pewno chcesz usunąć produkt z tego magazynu?</h2>
+<h2>Delete product from the Warehouse?</h2>
 
 <div>
     <hr />
@@ -39,8 +39,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Usuń" class="btn btn-primary btn-large" /> <br /><br />
-            @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+            <input type="submit" value="Delete" class="btn btn-primary btn-large btn-danger" /> 
+            @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
         </div>
     }
 </div>

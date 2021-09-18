@@ -14,7 +14,6 @@
                 Search: @Html.TextBox("SearchString")
                 <input type="submit" value="Search" class="btn btn-primary btn-large" />
             </p>
-
         }
 
 
@@ -42,10 +41,8 @@
                 </a><br />
                 @Html.DisplayFor(modelItem => item.Producer.Name)
                 @Html.DisplayFor(modelItem => item.Name)<br />
-                @Html.DisplayFor(modelItem => item.Price) zł
-                <a href='@Url.Action( "OrderNow", "Carts", new { id = item.Id }, null)'>
-                    <img src='@Url.Content("~/Resources/cart.png")' />
-                </a>
+                @Html.DisplayFor(modelItem => item.Price) PLN
+                <br />
                 @if (Context.User.IsInRole("Admin"))
                 {
                     @Html.ActionLink("Edit      ", "Edit", new { id = item.Id })

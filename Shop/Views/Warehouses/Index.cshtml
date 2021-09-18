@@ -6,13 +6,10 @@
 
 <h2>Warehouses</h2>
 
-    <ul id="warelist">
-          <li >@Html.ActionLink("Add Warehouse ", "Create", null, new { @class = "btn btn-primary btn-large" })</li>
-          <li>@Html.ActionLink("Warehouses", "Index", "QuantityWarehouses", null, new { @class = "btn btn-primary btn-large" })</li>
-    </ul>
-<p>
-
-</p>
+<ul>
+    @Html.ActionLink("Add Warehouse ", "Create", null, new { @class = "btn btn-primary btn-large" })
+   @Html.ActionLink("Warehouses", "Index", "QuantityWarehouses", null, new { @class = "btn btn-primary btn-large" })
+</ul>
 <table class="table">
     <tr>
         <th>

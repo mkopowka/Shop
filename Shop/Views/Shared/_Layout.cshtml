@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Sklep internetowy </title>
+    <title>@ViewBag.Title - Online Store </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="@Url.Action("Index", "Home")" class="navbar-brand">
-                    <img src="~/Resources/logo.png" title="title" alt="additional title" />
+                    <img src="~/Resources/rs.png" title="title" alt="additional title" />
                 </a>
             </div>
             <div class="navbar-collapse collapse">
@@ -44,7 +44,7 @@
         @RenderBody()
         <hr />
         <footer>
-            @Html.ActionLink("Kontakt", "Contact", "Home")
+            @Html.ActionLink("Contact", "Contact", "Home")
             <p>&copy; @DateTime.Now.Year - Mateusz Kopówka ©</p>
 
         </footer>

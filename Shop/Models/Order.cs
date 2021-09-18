@@ -17,16 +17,16 @@ namespace Shop.Models
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Order Date")]
-        [Required(ErrorMessage = "Error! You need add order date")]
+        [Required(ErrorMessage = "Error! You need add order date!")]
         public DateTime OrderDate { get; set; }
 
         [Display(Name = "Order Status")]
-        [Required(ErrorMessage = "Error! You need change order Status")]
+        [Required(ErrorMessage = "Error! You need change order Status!")]
         public OrderStatus? OrderStatus { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Send Order")]
-        [Required(ErrorMessage = "Error! You need add Send Date")]
+        [Required(ErrorMessage = "Error! You need add Send Date!")]
         public DateTime SendOrder { get; set; }
 
         public virtual User User { get; set; }

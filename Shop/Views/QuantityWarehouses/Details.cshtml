@@ -1,10 +1,10 @@
 ﻿@model Shop.Models.QuantityWarehouse
 
 @{
-    ViewBag.Title = "Szczegóły";
+    ViewBag.Title = "Product Details";
 }
 
-<h2>Szczegóły danej ilości produktu w magazynie</h2>
+<h2>Product Details</h2>
 
 <div>
     <hr />
@@ -31,8 +31,9 @@
         <dd>
             @Html.DisplayFor(model => model.Product.Name)
         </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Powrót", "Index", null, new { @class = "btn btn-primary btn-large" })
+    @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
 </p>
