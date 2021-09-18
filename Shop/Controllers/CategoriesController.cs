@@ -13,7 +13,7 @@ namespace Shop.Controllers
 {
     public class CategoriesController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Categories
         public ViewResult Index(string sortOrder, string searchString)

@@ -106,10 +106,10 @@
     </dl>
     <table border="1">
         <tr>
-            <th>Nazwa</th>
-            <th>Cena</th>
-            <th>Ilość</th>
-            <th>Całość</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
         </tr>
 
         @foreach (Cart cart in (List<Cart>)ViewBag.Basket)
@@ -122,11 +122,11 @@
             </tr>
         }
         <tr>
-            <td colspan="3">Kurier:</td>
+            <td colspan="3">Ship:</td>
             <td>16 zł</td>
         </tr>
         <tr>
-            <td colspan="3">Całkowite zamówienie:</td>
+            <td colspan="3">Order Total:</td>
             <td>
                 @{
                     List<Cart> tmp = (List<Cart>)ViewBag.Basket;

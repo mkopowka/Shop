@@ -55,10 +55,10 @@ namespace Shop.Models
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Hasło")]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
-        [Display(Name = "Zapamiętać hasło?")]
+        [Display(Name = "Remember password?")]
         public bool RememberMe { get; set; }
     }
 
@@ -72,22 +72,22 @@ namespace Shop.Models
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Hasło")]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Powtórz hasło")]
-        [Compare("Password", ErrorMessage = "Hasło oraz potwierdzenie nie pasują do siebie.")]
+        [Display(Name = "Repeat Password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         [Required]
-        [StringLength(32, ErrorMessage = "{0} musi mieć co najmniej {2} znaków.", MinimumLength = 3)]
-        [Display(Name = "Imię")]
+        [StringLength(32, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 3)]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(32, ErrorMessage = "{0} musi mieć co najmniej {2} znaków.", MinimumLength = 3)]
-        [Display(Name = "Nazwisko")]
+        [StringLength(32, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 3)]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
     }
 
@@ -101,11 +101,11 @@ namespace Shop.Models
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Hasło")]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Powtórz hasło")]
+        [Display(Name = "Repeat Password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 

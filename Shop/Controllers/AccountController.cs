@@ -18,7 +18,7 @@ namespace Shop.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
         public AccountController()
         {
         }

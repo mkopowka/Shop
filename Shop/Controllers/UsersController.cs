@@ -13,7 +13,7 @@ namespace Shop.Controllers
 {
     public class UsersController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Users
         public ActionResult Index()

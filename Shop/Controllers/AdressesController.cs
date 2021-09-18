@@ -14,7 +14,7 @@ namespace Shop.Controllers
 
     public class AdressesController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Adresses
         public ActionResult Index()

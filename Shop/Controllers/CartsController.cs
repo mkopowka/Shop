@@ -14,8 +14,8 @@ namespace Shop.Controllers
     [Authorize]
     public class CartsController : Controller
     {
-        private ShopContext db = new ShopContext();
-        private string strBasket = "Basket";
+        private readonly ShopContext db = new ShopContext();
+        private readonly string strBasket = "Basket";
         // GET: Baskets
         public ActionResult Index()
         {
@@ -40,7 +40,7 @@ namespace Shop.Controllers
             else
             {
                 List<Cart> IsCart = (List<Cart>)Session[strBasket];
-                int chceck = isExistingCheck(id);
+                int chceck = IsExistingCheck(id);
                 if (chceck == -1)
                 {
                     IsCart.Add(new Cart(db.Products.Find(id), 1));
@@ -54,7 +54,7 @@ namespace Shop.Controllers
             return View("Index");
         }
 
-        private int isExistingCheck(int? id)
+        private int IsExistingCheck(int? id)
         {
             List<Cart> IsCart = (List<Cart>)Session[strBasket];
             for (int i = 0; i < IsCart.Count; i++)
@@ -72,7 +72,7 @@ namespace Shop.Controllers
             }
             else
             {
-                int check = isExistingCheck(id);
+                int check = IsExistingCheck(id);
                 List<Cart> IsCart = (List<Cart>)Session[strBasket];
                 IsCart.RemoveAt(check);
             }

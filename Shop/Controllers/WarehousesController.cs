@@ -14,7 +14,7 @@ namespace Shop.Controllers
     [Authorize(Roles = "Admin")]
     public class WarehousesController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Warehouses
         public ActionResult Index()

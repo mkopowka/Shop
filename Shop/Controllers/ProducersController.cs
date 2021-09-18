@@ -14,7 +14,7 @@ namespace Shop.Controllers
 {
     public class ProducersController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Producers
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)

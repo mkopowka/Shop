@@ -15,7 +15,7 @@ namespace Shop.Controllers
 {
     public class ProductsController : Controller
     {
-        private ShopContext db = new ShopContext();
+        private readonly ShopContext db = new ShopContext();
 
         // GET: Products
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? idc, int? page)
