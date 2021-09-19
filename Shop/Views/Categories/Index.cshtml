@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Shop.Models.Category>
 
 @{
-    ViewBag.Title = "Cattegories";
+    ViewBag.Title = "Categories";
 }
 
 @using (Html.BeginForm("Index", "Categories", FormMethod.Get))
@@ -11,6 +11,10 @@
 {
     @Html.ActionLink("Add Category", "Create", null, new { @class = "btn btn-primary btn-large" })
 }
+<table class="table">
+    <tr>
+    </tr>
+</table>
 <div class="row">
 
     @foreach (var item in Model)

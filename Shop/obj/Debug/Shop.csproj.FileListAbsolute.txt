@@ -81,6 +81,7 @@ C:\Users\domko\Documents\Repository\Shop\Shop\bin\Microsoft.Owin.Security.OAuth.
 C:\Users\domko\Documents\Repository\Shop\Shop\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\domko\Documents\Repository\Shop\Shop\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\domko\Documents\Repository\Shop\Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\domko\Documents\Repository\Shop\Shop\obj\Debug\Shop.csproj.AssemblyReference.cache
 C:\Users\domko\Documents\Repository\Shop\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
 C:\Users\domko\Documents\Repository\Shop\Shop\obj\Debug\Shop.csproj.CopyComplete
 C:\Users\domko\Documents\Repository\Shop\Shop\obj\Debug\Shop.dll

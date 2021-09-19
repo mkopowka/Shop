@@ -33,6 +33,7 @@ namespace Shop.DAL
             };
             users.ForEach(p => context.Users.Add(p));
 
+            /*
             var category = new List<Category>
             {
                 new Category {Name ="Smartfony", Description ="Same najlepsze modele, w najlepszych cenach."},
@@ -66,7 +67,7 @@ namespace Shop.DAL
                 new Product {Name = "Super Shield Czarne", Price =40, Description ="Pokrowiec do telefonu Huaweii Mate 10 Lite", Category= category[2] ,Producer=prod[3]}
             };
             item.ForEach(p => context.Products.Add(p));
-
+            */
             context.SaveChanges();
         }
     }
