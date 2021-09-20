@@ -12,6 +12,7 @@ namespace Shop.DAL
         public ShopContext()
             : base("DefaultConnection")
         {
+            Database.SetInitializer<DbContext>(null);
         }
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }

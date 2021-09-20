@@ -43,7 +43,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.ProducerId, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownListFor(model => model.ProducerId, (SelectList)ViewBag.ProdList, "Wybierz Producenta", new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.ProducerId, (SelectList)ViewBag.ProdList, "Select Producer", new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.ProducerId, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -52,7 +52,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.CategoryId, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.CatList, "Wybierz Kategorie", new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.CatList, "Select Category", new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -70,7 +70,6 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Add product" class="btn btn-primary btn-large" />
-            @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
         </div>
     </div>
 </div>

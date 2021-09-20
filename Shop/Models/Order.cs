@@ -25,7 +25,7 @@ namespace Shop.Models
         public OrderStatus? OrderStatus { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Send Order")]
+        [Display(Name = "Send Dispatch Order")]
         [Required(ErrorMessage = "Error! You need add Send Date!")]
         public DateTime SendOrder { get; set; }
 
@@ -38,9 +38,10 @@ namespace Shop.Models
 
     public enum OrderStatus
     {
-        Przyjęto,
-        Realizacja,
-        Wysłano,
-        Anulowano
+        Accepted,
+        Realization,
+        Sent,
+        Received,
+        Canceled
     }
 }

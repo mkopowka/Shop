@@ -4,7 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<dd>
+    <H2>@Html.DisplayFor(model => model.Name)</H2> 
+</dd>
+
 
 <div>
     <hr />
@@ -12,14 +15,6 @@
         <dd>
             <img src="~/Resources/@Model.Photo" alt="Zdj" height="250" width="250" />
         </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.Description)
         </dt>
@@ -32,6 +27,3 @@
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
-</p>

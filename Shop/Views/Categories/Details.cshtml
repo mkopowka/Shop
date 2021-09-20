@@ -4,21 +4,15 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<dd>
+    <h2>@Html.DisplayFor(model => model.Name)</h2>
+</dd>
 
 <div>
     <hr />
     <dl class="dl-horizontal">
         <dd>
-            <img src="~/Resources/@Model.Photo" alt="Zdj" height="30%" width="30%" />
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
+            <img src="~/Resources/@Model.Photo" alt="Zdj" height="300" width="300" />
         </dd>
 
         <dt>
@@ -29,16 +23,16 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
         <dt>
-            Produkty:
+            Products:
         </dt>
         <dd>
-            <table class="table">
+
                 <ul id="horizontal-list">
 
                     @foreach (var item in Model.Product)
-            {
+                    {
                         <li>
-                                <img src="~/Resources/@item.Photo" alt="Zdjęcie" height="300" width="200" />
+                            <img src="~/Resources/@item.Photo" alt="Zdjęcie" height="300" width="200" />
                             <br />
                             @Html.DisplayFor(modelItem => item.Producer.Name)
                             @Html.DisplayFor(modelItem => item.Name)<br />
@@ -49,10 +43,6 @@
                         </li>
                     }
                 </ul>
-            </table>
         </dd>
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-primary btn-large" })
-</p>

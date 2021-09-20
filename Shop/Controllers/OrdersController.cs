@@ -69,7 +69,7 @@ namespace Shop.Controllers
             ViewBag.FirstName = activeUser.FirstName;
             ViewBag.LastName = activeUser.LastName;
             Order order = new Order { UserID = activeUser.Id, Address = new Adress() };
-            order.OrderStatus = OrderStatus.Przyjęto;
+            order.OrderStatus = OrderStatus.Accepted;
             order.OrderDate = DateTime.Now;
             order.SendOrder = DateTime.Now;
             return View(order);
