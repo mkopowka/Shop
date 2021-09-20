@@ -15,5 +15,12 @@ Royal Store is a web application owhere customers can browse the catalog and sel
 
 
 # Views
+* Product
 ![alt text](https://github.com/mkopowka/Shop/blob/main/sc1.PNG)
-![alt text](https://github.com/[mkopowka]/[Shop]/blob/[main]/sc1.PNG?raw=true)
+
+* Cart
+![alt text](https://github.com/mkopowka/Shop/blob/main/cart.PNG)
+* Order
+![alt text](https://github.com/mkopowka/Shop/blob/main/order.PNG)
+* Details 
+![alt text](https://github.com/mkopowka/Shop/blob/main/details.PNG)
