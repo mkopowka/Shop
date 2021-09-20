@@ -3,10 +3,13 @@
 Royal Store is a web application owhere customers can browse the catalog and select product of interest. The items may be collected in a shoppign cart. At the checkout time, user give the address where the order is to be shipped.  
 
 # Key Features
+* Registration
+* Login
 #### User Panel
 * Products
 * Categoires
 * Producers
+* Address
 * Cart
 * Orders
 #### Admin Panel
@@ -17,7 +20,6 @@ Royal Store is a web application owhere customers can browse the catalog and sel
 # Views
 * Product
 ![alt text](https://github.com/mkopowka/Shop/blob/main/sc1.PNG)
-
 * Cart
 ![alt text](https://github.com/mkopowka/Shop/blob/main/cart.PNG)
 * Order
