@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop", "Shop\Shop.csproj", "{D321E166-3BF5-4AE9-AB96-E63398081BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsRS", "UnitTestsRS\UnitTestsRS.csproj", "{D7C9B2A3-DBB8-453B-BC84-CA493A238808}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{D321E166-3BF5-4AE9-AB96-E63398081BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D321E166-3BF5-4AE9-AB96-E63398081BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D321E166-3BF5-4AE9-AB96-E63398081BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C9B2A3-DBB8-453B-BC84-CA493A238808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C9B2A3-DBB8-453B-BC84-CA493A238808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C9B2A3-DBB8-453B-BC84-CA493A238808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C9B2A3-DBB8-453B-BC84-CA493A238808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D95FF38-90D7-4E81-8EB7-E31764B98878}
 	EndGlobalSection
 EndGlobal
