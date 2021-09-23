@@ -1,11 +1,7 @@
 # Royal Store
 
 Royal Store is a web application owhere customers can browse the catalog and select product of interest. The items may be collected in a shoppign cart. At the checkout time, user give the address where the order is to be shipped. Front-End is a basic ASP.NET view.
-Stack:
-Language: C#
-.NET Core 3.1
-ASP .NET
-Entity Framework 6.1.3
+#### Stack:C#, .NET Core, ASP .NET, Entity Framework 
 
 # Key Features
 * Registration

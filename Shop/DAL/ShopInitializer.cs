@@ -22,14 +22,14 @@ namespace Shop.DAL
 
             roleManager.Create(new IdentityRole("Admin"));
             var user = new ApplicationUser { UserName = "mkopowka@wp.pl" };
-            string passwor = "Mati123";
+            string passwor = "Test123";
 
             userManager.Create(user, passwor);
             userManager.AddToRole(user.Id, "Admin");
 
             var users = new List<User>
             {
-                new User { FirstName="Mateusz",LastName="Kopowka",Email="mkopowka@wp.pl" }
+                new User { FirstName="Mateusz",LastName="Kopowka",Email="mkopowka@mkop.pl" }
             };
             users.ForEach(p => context.Users.Add(p));
 

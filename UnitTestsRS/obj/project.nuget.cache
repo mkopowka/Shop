@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mu5fZJsOmeJTXo+eR3Mk7mQ0CTaZpoqsOPW8xMqkKBg0VvkK6GUjYyg4e2jcvhZ1mVVSTLAG/OMGMeXZXRTGdg==",
+  "dgSpecHash": "aGEK6gk9TV9TOsAX/xh6XYqqcLnFNiq8yc4lUuSQqGGbPNlqlmdFKpm3ALFCliaSUu22zkKN+M0PY6Wtmd/0mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\domko\\Documents\\Repository\\Shop\\UnitTestsRS\\UnitTestsRS.csproj",
   "expectedPackageFiles": [
@@ -53,7 +53,10 @@
     "C:\\Users\\domko\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
     "C:\\Users\\domko\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
     "C:\\Users\\domko\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
-    "C:\\Users\\domko\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    "C:\\Users\\domko\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512",
+    "C:\\Users\\domko\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\domko\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\domko\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }
