@@ -24,7 +24,7 @@ namespace Shop.Controllers
         public ActionResult ShowMyOrders()
         {
             var orders = db.Orders.Include(o => o.User);
-            int id = db.getUser().Id;
+            int id = db.GetUser().Id;
             return View(orders.ToList().Where(s=>s.UserID==id));
         }
         // GET: Orders/Details/5
@@ -64,7 +64,7 @@ namespace Shop.Controllers
         public ActionResult Create()
         {
             ViewBag.UserID = new SelectList(db.Users, "Id", "Email");
-            User activeUser = db.getUser();
+            User activeUser = db.GetUser();
             ViewBag.User = activeUser.Id;
             ViewBag.FirstName = activeUser.FirstName;
             ViewBag.LastName = activeUser.LastName;

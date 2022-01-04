@@ -35,7 +35,7 @@ namespace Shop.DAL
             Users.Add(user);
             SaveChanges();
         }
-        public User getUser()
+        public User GetUser()
         {
             string username = System.Web.HttpContext.Current.User.Identity.Name;
             var temp = Users.Where(s => username.Contains(s.Email)).ToList();
