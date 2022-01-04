@@ -22,7 +22,7 @@ namespace Shop.DAL
 
             roleManager.Create(new IdentityRole("Admin"));
             var user = new ApplicationUser { UserName = "mkopowka@wp.pl" };
-            string passwor = "Test123";
+            string passwor = "Tester123";
 
             userManager.Create(user, passwor);
             userManager.AddToRole(user.Id, "Admin");
