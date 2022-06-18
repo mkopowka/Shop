@@ -49,7 +49,6 @@ namespace Shop.Controllers
             }
 
             Order order = db.Orders.Find(id);
-            
             List<Cart> basket = db.Carts.Include(o => o.Product).ToList();
             basket = basket.Where(s => s.OrderId.Equals(id)).ToList();
             ViewBag.Basket = basket;
